@@ -18,11 +18,11 @@ function App() {
         />
 
         <div className="main-content">
-          
+
           <section className="hero">
             <div className="hero-image">
-             <img src="./src/images/tripleMantaEvo3fullscreen.png" alt="Hero Image" />
-              
+              <img src="./src/images/tripleMantaEvo3fullscreen.png" alt="Hero Image" />
+
             </div>
             <div className="hero-content">
               <h1>Get ready for a truly seamless experience.</h1>
@@ -31,30 +31,33 @@ function App() {
               </p>
               <div className="hero-buttons">
                 <div className="row">
-                  <button className="btn-primary" style={{flex:3,}}>
+                  <a className="btn-primary" style={{ flex: 3, }}>
                     Explore Products
-                  </button>
-                  <button className="btn-secondary" style={{flex:2,}}>
+                  </a>
+                  <a className="btn-secondary" style={{ flex: 2, }}>
                     Our Games
-                  </button>
+                  </a>
                 </div>
                 <div className="row">
-                  <button className="btn-secondary" style={{flex:0.8,}}>
+                  <a className="btn-secondary" style={{ flex: 0.8, }}>
                     Docs
-                  </button>
-                  <button className="btn-secondary" style={{flex:1.2,}}>
-                   Join our Discord
-                  </button>
-                  <button className="btn-secondary" style={{flex:0.8,}}>
-                    Imprint
-                  </button>
+                  </a>
+                  <a href="https://discord.gg/wVugAM5k9E" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ flex: 1.2, }}>                    
+                      Join our Discord
+                  </a>
+                  <a className="btn-secondary" style={{ flex: 0.8, }}>
+                    About Us
+                  </a>
                 </div>
               </div>
             </div>
           </section>
+          <footer>
+            <a href="http://google.com">Privacy Notice</a>
+
+            <a href="http://google.com"> Imprint</a>
+          </footer>
         </div>
-
-
       </div>
     </>
   );
