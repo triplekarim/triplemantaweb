@@ -1,4 +1,21 @@
 
+body {
+  margin: 0;
+
+  background: #000000;
+  color: #222;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+}
+
+
+.main-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .main-content {
   color: white;
   position: relative; /* make sure it stacks above */
@@ -6,13 +23,9 @@
   padding: 8rem;
 
   font-family: "Figtree", sans-serif;
-}
 
-body {
-  margin: 0;
-
-  background: #000000;
-  color: #222;
+  
+  flex: 1;
 }
 
 .hero {
@@ -24,6 +37,8 @@ body {
   margin: 0 auto;
   padding: 3rem;
   gap: 9rem;
+
+  flex:1;
 }
 
 .hero-image {
@@ -92,22 +107,33 @@ body {
   text-align: center;
 
   cursor: pointer;
-  transition: background 0.2s;
+  transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+  /*transition: background 0.2s; */
 
   font-family: "Roboto", sans-serif;
 }
 
-.btn-primary {
+
+.hero-button {
+  backdrop-filter: blur(10px); /* blur underlying content */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+}
+
+.hero-button:active {
+ /*transform: scale(0.975);*/
+ transform: translateY(2px);
+}
+
+.btn-primary, .btn-primary:visited, .btn-primary:link, .btn-primary:hover, .btn-primary:active {
   background: rgba(255, 255, 255, 0.8); /* semi-transparent */
   border: solid rgba(255, 255, 255, 0.2) 1px;
+  opacity: 1;
 
   color: rgba(0, 0, 0, 0.9);
 
   font-weight: 500;
-
-  backdrop-filter: blur(10px); /* blur underlying content */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
 }
+
 .btn-primary:hover {
   background: rgba(255, 255, 255, 1); /* semi-transparent */
   border: solid rgba(255, 255, 255, 1) 1px;
@@ -115,22 +141,64 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
-.btn-secondary {
+.btn-secondary, .btn-secondary:visited, .btn-secondary:link, .btn-secondary:hover, .btn-secondary:active {
   background: rgba(110, 110, 110, 0.1); /* semi-transparent */
   border: solid rgba(110, 110, 110, 0.2) 1px;
+  opacity: 1;
 
   color: rgba(255, 255, 255, 0.7);
 
   font-weight: 400;
-
-  backdrop-filter: blur(10px); /* blur underlying content */
-  -webkit-backdrop-filter: blur(10px); /* Safari support */
 }
+
 .btn-secondary:hover {
   background: rgba(110, 110, 110, 0.2);
   border: solid rgba(110, 110, 110, 0.3) 1px;
   color: rgba(255, 255, 255, 0.8);
 }
+
+
+footer {
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+footer span {
+  color: white;
+  opacity: 40%;
+}
+
+footer a {
+  color: white;
+  opacity: 40%;
+
+  font-weight: 400;
+  text-decoration: none;
+
+  transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
+}
+
+footer a:link {
+  color: white;
+  opacity: 40%;
+}
+
+footer a:visited {
+  color: white;
+  opacity: 40%;
+}
+
+footer a:hover {
+  color: white;
+  opacity: 60%;
+}
+
+a:active {
+  color: white;
+  opacity: 40%;
+}
+
+
 
 /* Responsive adjustments */
 
