@@ -22,7 +22,7 @@ body {
   z-index: 1;
   padding: 8rem;
 
-  font-family: "Figtree", sans-serif;
+  font-family: "Roboto", sans-serif;
 
   
   flex: 1;
@@ -161,11 +161,20 @@ body {
 footer {
   padding-bottom: 10px;
   margin: auto;
+
+  font-weight: 400;
+  text-decoration: none;
 }
 
 footer span {
   color: white;
   opacity: 40%;
+}
+
+
+.footer-spacer {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 footer a {
@@ -178,24 +187,13 @@ footer a {
   transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
 }
 
-footer a:link {
-  color: white;
-  opacity: 40%;
-}
-
-footer a:visited {
+footer a:link, footer a:visited, footer a:hover, footer a:active {
   color: white;
   opacity: 40%;
 }
 
 footer a:hover {
-  color: white;
   opacity: 60%;
-}
-
-a:active {
-  color: white;
-  opacity: 40%;
 }
 
 

@@ -56,8 +56,12 @@ function App() {
 
           </div>
           <footer>
-            <a href="http://google.com">Privacy Notice</a>
-            <span style={{ marginLeft:"10px", marginRight:"10px", color:"white"}}>•</span>
+            <span>© 2025 tripleManta</span>
+            <span className="footer-spacer">•</span>
+            <a href="http://google.com">Terms of Service</a>
+            <span className="footer-spacer">•</span>
+            <a href="http://google.com">Privacy</a>
+            <span className="footer-spacer">•</span>
             <a href="http://google.com"> Imprint</a>
           </footer>
         </div>
