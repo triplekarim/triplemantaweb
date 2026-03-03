@@ -1,14 +1,10 @@
 
-body {
-  margin: 0;
 
-  background: #000000;
-  color: #222;
-
-  font-family: "Roboto", sans-serif;
-  font-weight: 200;
+.home {
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
-
 
 .main-content-wrapper {
   display: flex;
@@ -18,12 +14,9 @@ body {
 
 .main-content {
   color: white;
-  position: relative; /* make sure it stacks above */
+  position: relative;
   z-index: 1;
   padding: 8rem;
-
-  font-family: "Roboto", sans-serif;
-
   
   flex: 1;
 }
@@ -102,6 +95,7 @@ body {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
 
+  text-decoration: inherit;
   border-radius: 2rem;
 
   text-align: center;
@@ -158,7 +152,7 @@ body {
 }
 
 
-footer {
+.home footer {
   padding-bottom: 10px;
   margin: auto;
 
@@ -166,7 +160,7 @@ footer {
   text-decoration: none;
 }
 
-footer span {
+.home footer span {
   color: white;
   opacity: 40%;
 }
@@ -177,7 +171,7 @@ footer span {
   margin-right: 10px;
 }
 
-footer a {
+.home footer a {
   color: white;
   opacity: 40%;
 
@@ -187,12 +181,12 @@ footer a {
   transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
 }
 
-footer a:link, footer a:visited, footer a:hover, footer a:active {
+.home footer a:link, .home footer a:visited, .home footer a:hover, .home footer a:active {
   color: white;
   opacity: 40%;
 }
 
-footer a:hover {
+.home footer a:hover {
   opacity: 60%;
 }
 
