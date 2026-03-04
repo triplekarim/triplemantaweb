@@ -4,7 +4,7 @@ import { githubPagesSpa } from '@sctg/vite-plugin-github-pages-spa';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/triplemantaweb',
+  base: '/triplemantaweb/',
   plugins: [
     react(),
     githubPagesSpa({ verbose: true }),
