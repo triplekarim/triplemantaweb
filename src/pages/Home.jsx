@@ -27,17 +27,17 @@ export default function Home() {
         <div className="main-content">
           <section className="hero">
             <div className="hero-image">
-              <img src={tripleManta} alt="Hero Image" />
+              <img src={tripleManta} alt="Hero Image" className="fade-up"/>
             </div>
             <div className="hero-content">
-              <h1>Get ready for a truly seamless experience.</h1>
-              <p>
+              <h1 className="fade-up delay-1">Get ready for a truly seamless experience.</h1>
+              <p className="fade-up delay-2">
                 We provide the same state of the art frameworks and solutions to you that power our own games. Say goodbye to low-quality tech stores and hello to smooth, efficient integrations.
               </p>
 
               <div className="hero-buttons-grid">
                 <a
-                  className="hero-button btn-primary hero-btn-1"
+                  className="hero-button btn-primary fade-up delay-3 hero-btn-1"
 
                   href="https://triplemanta.lemonsqueezy.com/"
                 >
@@ -45,7 +45,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  className="hero-button btn-secondary hero-btn-2"
+                  className="hero-button btn-secondary fade-up delay-4 hero-btn-2"
 
                   href="https://www.roblox.com/communities/630543637/tripleManta"
                   target="_blank"
@@ -55,7 +55,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  className="hero-button btn-secondary hero-btn-3"
+                  className="hero-button btn-secondary fade-up delay-5 hero-btn-3"
 
                   href="https://docs.triplemanta.com/home/get-started/"
                 >
@@ -63,7 +63,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  className="hero-button btn-secondary hero-btn-4"
+                  className="hero-button btn-secondary fade-up delay-6 hero-btn-4"
 
                   href="https://discord.gg/wVugAM5k9E"
                   target="_blank"
@@ -73,7 +73,7 @@ export default function Home() {
                 </a>
 
                 <Link
-                  className="hero-button btn-secondary hero-btn-5"
+                  className="hero-button btn-secondary fade-up delay-7 hero-btn-5"
 
                   to="/about"
                 >
@@ -84,7 +84,7 @@ export default function Home() {
           </section>
         </div>
 
-        <footer>
+        <footer className='fade-up delay-8'>
           <span>© 2026 tripleManta</span>
           <span className="footer-spacer">•</span>
           <Link to="/terms">Terms of Service</Link>

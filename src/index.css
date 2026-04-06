@@ -107,14 +107,21 @@ h1 {
 
 @media (max-width: 1700px) {
   .page-wrapper {
-    padding: 5rem;
+    padding: 6rem 12rem;
   }
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 1200px) {
   .page-wrapper {
-    padding: 2rem;
+    padding: 4rem 8rem;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .page-wrapper {
+    padding: 2rem 4rem;
   }
 }
 
@@ -125,3 +132,52 @@ h1 {
   color: #fff;
   text-decoration: none;
 }
+
+
+/* Animations */
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.2s; }
+  .delay-3 { animation-delay: 0.3s; }
+  .delay-4 { animation-delay: 0.4s; }
+  .delay-5 { animation-delay: 0.5s; }
+  .delay-6 { animation-delay: 0.6s; }
+  .delay-7 { animation-delay: 0.7s; }
+  .delay-8 { animation-delay: 0.8s; }
+  .delay-9 { animation-delay: 0.9s; }
+  .delay-10 { animation-delay: 1.0s; }
+  .delay-11 { animation-delay: 1.1s; }
+  .delay-12 { animation-delay: 1.2s; }
+
+  .stagger-fade-up > * {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fadeUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fade-up {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+
+    .stagger-fade-up > * {
+      opacity: 1;
+      transform: none;
+      animation: none;
+    }
+  }
