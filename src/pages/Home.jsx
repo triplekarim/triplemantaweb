@@ -9,7 +9,7 @@ import tripleManta from '../images/tm.svg';
 
 export default function Home() {
   console.log('Home component mounted');
-  
+
   return (
     <div className="home">
       <Suspense fallback={null}>
@@ -31,54 +31,59 @@ export default function Home() {
             </div>
             <div className="hero-content">
               <h1>Get ready for a truly seamless experience.</h1>
-              <p style={{color: "#ffffffd2"}}>
+              <p>
                 We provide the same state of the art frameworks and solutions to you that power our own games. Say goodbye to low-quality tech stores and hello to smooth, efficient integrations.
               </p>
-              <div className="hero-buttons">
-                <div className="row">
-                  <a
-                    href="https://triplemanta.lemonsqueezy.com/"
-                    className="hero-button btn-primary"
-                    style={{ flex: 3 }}
-                  >
-                    Explore Products
-                  </a>
-                  <a
-                    href="https://www.roblox.com/communities/630543637/tripleManta"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hero-button btn-secondary"
-                    style={{ flex: 2 }}
-                  >
-                    Our Games
-                  </a>
-                </div>
-                <div className="row">
-                  <a
-                    href="https://docs.triplemanta.com/home/get-started/"
-                    className="hero-button btn-secondary"
-                    style={{ flex: 0.8 }}
-                  >
-                    Docs
-                  </a>
-                  <a
-                    href="https://discord.gg/wVugAM5k9E"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hero-button btn-secondary"
-                    style={{ flex: 1.2 }}
-                  >
-                    Join our Discord
-                  </a>
-                  <Link to="/about" className="hero-button btn-secondary" style={{ flex: 0.9 }}>
-                    About Us
-                  </Link>
-                </div>
+
+              <div className="hero-buttons-grid">
+                <a
+                  className="hero-button btn-primary hero-btn-1"
+
+                  href="https://triplemanta.lemonsqueezy.com/"
+                >
+                  Explore Products
+                </a>
+
+                <a
+                  className="hero-button btn-secondary hero-btn-2"
+
+                  href="https://www.roblox.com/communities/630543637/tripleManta"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Our Games
+                </a>
+
+                <a
+                  className="hero-button btn-secondary hero-btn-3"
+
+                  href="https://docs.triplemanta.com/home/get-started/"
+                >
+                  Docs
+                </a>
+
+                <a
+                  className="hero-button btn-secondary hero-btn-4"
+
+                  href="https://discord.gg/wVugAM5k9E"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Join our Discord
+                </a>
+
+                <Link
+                  className="hero-button btn-secondary hero-btn-5"
+
+                  to="/about"
+                >
+                  About Us
+                </Link>
               </div>
             </div>
           </section>
         </div>
-        
+
         <footer>
           <span>© 2026 tripleManta</span>
           <span className="footer-spacer">•</span>
