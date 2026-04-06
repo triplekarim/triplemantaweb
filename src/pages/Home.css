@@ -163,7 +163,7 @@
 .btn-secondary:link,
 .btn-secondary:hover,
 .btn-secondary:active {
-  background: rgba(40, 40, 40, 0.15);
+  background: rgba(30, 30, 30, 0.2);
   border: solid rgba(110, 110, 110, 0.1) 1px;
   opacity: 1;
 
