@@ -31,7 +31,7 @@ export default function Home() {
             </div>
             <div className="hero-content">
               <h1>Get ready for a truly seamless experience.</h1>
-              <p>
+              <p style={{color: "#ffffffd2"}}>
                 We provide the same state of the art frameworks and solutions to you that power our own games. Say goodbye to low-quality tech stores and hello to smooth, efficient integrations.
               </p>
               <div className="hero-buttons">
